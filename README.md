@@ -1,1 +1,2 @@
 # kenya-boost-regression
+Kenya was the first African country to publish the entire public expenditure data in one consolidated Excel file in 2011. The platform contains almost two decades of spending information at the central and local levels and continues to be yearly updated, curated and disseminated by the Government of Kenya.
