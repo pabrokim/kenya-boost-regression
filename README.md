@@ -15,7 +15,10 @@ It is hypothesize that the Ministry responsible for the budget could have an imp
 For the regression analysis, Estimates, Revised, and Ministry are used as features. The primary model selected is Linear Regression, as it provides a straightforward approach to understand the relationship between the variables. Additionally, regularized versions of linear regression, such as Ridge Regression and Lasso Regression help prevent overfitting and improve model generalization. These models unlocks the predictive power of the budget estimates and revisions and potential impacts of different ministries on actual budget execution.
 
 **Evaluation Metrics**
-The models are evaluated using several metrics, including R-squared (R²), which provide variance in execution as explained by the estimates and revisions and Mean Absolute Error (MAE) average error between predicted and actual execution.
+The models are evaluated using R-squared (R²), which provide variance in execution as explained by the estimates and revisions and Mean Absolute Error (MAE) average error between predicted and actual execution.
 
 **Expected Outcomes**
 We expect that if Estimates alone can predict execution well, it would suggest that ministries generally adhere to their initial projections, regardless of revisions. If Revised budgets improve predictions, this would suggest that budget adjustments align expectations with actual outcomes. Finally, if the Ministry feature has a significant impact on the model, it would imply that certain ministries have more effective budget execution strategies than others.
+
+**Results**
+LinearRegression, Ridge, and Lasso regression were used to balance interpretability and performance. The models showed strong performance: the baseline mean absolute error (MAE) was ~79 million, but all trained models reduced this error to around ~13.7 million on the test set, with R² scores exceeding 0.95. These results suggest that both the initial estimates and revised budgets are strong predictors of final execution amounts. Moreover, Ridge and Lasso regularization had minimal impact which implied low multicollinearity and a robust signal in the predictors. This analysis highlights the reliability of government budget estimates while revealing opportunities for enhancing predictability through consistent mid-year revisions
